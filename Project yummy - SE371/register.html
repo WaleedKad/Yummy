@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- general meta tags -->
+  <meta charset="utf-8">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- site specific tags -->
+  <title>Yummy</title>
+  <!-- style sheets -->
+  <link rel="stylesheet" href="CSSLS\css-reset.css">
+  <link rel="stylesheet" href="CSSLS\styles.css">
+  
+</head>
+
+
+
+<body>
+  <header>
+    <img src="imagesLS\yummy.jpg" alt="yummy">
+  </header>
+  <main>
+    <section>
+      <article>
+        <form method="Sign Up" action="/someAction">
+          <fieldset>
+            <legend>Sign Up</legend>
+
+            <div>
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required pattern="[a-zA-Z]{2,20}"
+                title="2 to 20 letters" />
+            </div>
+            <div>
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required pattern="[a-zA-Z]{2,20}"
+                title="2 to 20 letters" />
+            </div>
+            <div>
+              <label for="email">E-Mail:</label>
+              <input type="email" id="email" name="email" required title="An email" />
+            </div>
+            <div>
+              <label for="phoneNumber">Phone #:</label>
+              <input type="text" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{10,14}"
+                title="a phone number of 10 to 14 digits" />
+            </div>
+
+            <div>
+              <label for="address">Address:</label>
+              <input type="text" id="address" name="address" required size="22" pattern="[a-z]{10, 30}"
+                title="Address of no more than 30 characters" />
+            </div>
+            <div>
+              <label for="zipCode">Zip Code:</label>
+              <input type="text" id="zipCode" name="zipCode" required pattern="[0-9]{4,6}"
+                title="a zip code of 4 to 6 digits" />
+            </div>
+            <input type="submit" value="Sign Up" onclick="window.location.href = 'HomePage.html'">
+            <input type="button" value="Login" onclick="window.location.href = 'login.html'">
+            
+            <div>
+          </fieldset>
+
+        </form>
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+:root {
+  --primary-color:rgb(236, 145, 236);
+  --secondary-color:rgba(138, 27, 138,0.827);
+  --ternairy-color:rgba(245, 12, 121,0.827);
+  --fourth-color:rgba(170, 126, 212,0.755);
+}
+
+
+:root {
+
+  --one: rgba(170, 126, 212, 0.755);
+  --two: rgb(236, 145, 236);
+  --three: rgba(138, 27, 138, 0.827);
+  --four: rgba(245, 12, 121, 0.827);
+}
+
+
+nav {
+  border: solid var(--four) 20px;
+  border-radius: 20px;
+  background-color: var(--three);
+  margin-top: 100px;
+  margin-bottom: 50px;
+  height:200px;
+  padding: 20px;
+  margin: 10px;
+  transition: 1s ease;
+}
+
+nav fieldset {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border: solid var(--two) 20px;
+  border-radius: 20px;
+  background-color: var(--one);
+  height: 80%;
+  width: 97%;
+  transition: 1s ease;
+}
+
+
+nav span button {
+  width: 200px;
+  padding: 30px;
+  margin: 10px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: var(--two);
+  color: var(--three);
+  transition: transform 0.3s ease;
+  height: 75px;
+}
+
+nav span button:hover {
+  background-color: var(--three);
+  color: var(--two);
+  transform: scale(1.05);
+
+}
+
+nav span button:active {
+  background-color: var(--four);
+  color: var(--three);
+  transform: scale(1.05);
+
+}
+
+
+
+nav fieldset:hover {
+
+  border: var(--four) solid 20px;
+  background-color:var(--three) ;
+  transition: 1s ease;
+  
+}
+
+nav:hover{  border: var(--two) solid 20px;  background-color:var(--one) ;
+
+  transition: 1s ease;}
+
+
+
+
+
+
+
+
+
+
+
+
+  html, body { 
+    background-color: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-size: 20px;
+    background-image: url('/images/WhatsApp\ Image\ 2023-10-28\ at\ 1.41.39\ AM.jpeg');
+    width: 100%;
+  }
+  
+    header img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border: solid 30px rgba(138, 27, 138, 0.827);
+      border-radius: 30px;
+      margin-bottom: 5px;
+  
+  
+  }
+  
+  .navbar {
+    background-color: var(--secondary-color);
+    
+  }
+  .navbar-text,
+  .navbar-brand,
+  .nav-link,
+  .nav-link.active {
+    color: white;
+  }
+  .btn btn-outline-success {
+    background-color: var(--fourth-color);
+    border: var(--primary-color);
+  }
+  
+
+.btn{
+    background-color: var(--ternairy-color);
+    color:white;
+    transition: 0.15s;
+    border-radius: 8px;
+    text-align: center;
+    border: solid 1px black;
+    
+  }
+  
+  .btn:hover{
+    cursor: pointer;
+    opacity: 8;
+    background-color:var(--primary-color);
+    color:white; 
+   }
+  
+  
+  .btn:active{
+    background-color:  palevioletred;;
+    opacity: 6;
+  
+  }
+ 
+  fieldset {
+    border: solid 2px var(--seconday-color);
+  }
+  .table_border {
+    background-color: var(--ternairy-color);
+    margin-top: 5px;
+    border: solid 1px var(--primary-color);
+
+
+  }
+  table {
+    text-align: left;
+    width: 100%;
+    margin: 5px;
+    
+    
+  }
+  
+  tr, th {
+    padding: 5px;
+    margin: 5px;
+
+  }
+  
+  tr :nth-child(2n) {
+    background-color:var(--secondary-color);
+  }
+  
+  
+
+  th {
+    color:black;
+    font-size: bold;
+    
+  }
+
+  img{
+    border-image-width: auto;
+    max-width: 2000px;
+  }
+ 
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  .order_total {
+    background-color: var(--primary-color);
+  }
+  tr:hover {
+    background-color: rgb(228, 141, 141);
+  }
+  .table_head:hover {
+    background-color: var(--secondary-color);
+
+  }
+  
+  
+
+  
+  article {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    text-align: left;
+   
+  }
+
+  footer {
+      text-align: left;
+      color: white;
+      border: solid 5px rgba(245, 12, 121, 0.827);
+      border-radius: 15px;
+      background-color: rgba(138, 27, 138, 0.827);
+      padding: 20px;
+      
+    }
+
+  
+nav span button {
+  width: 200px;
+  padding: 30px;
+  margin: 10px;
+  border: 0;
+  border-radius: 20px;
+  background-color: var(--two);
+  color: var(--three);
+  transition: transform 0.3s ease;
+  height: 75px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 605px) {
+  
+
+
+  
+
+  nav {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+  }
+
+  nav span button {
+      width: 100px;
+      padding: 15px;
+      margin: 5px;
+      height: 40px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  
+
+
+  nav {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+  }
+
+  
+
+
+nav span button {
+  width: 160px;
+  padding: 15px;
+  margin: 5px;
+  height: 80px;
+
+  border: 0px;
+}
+
+}

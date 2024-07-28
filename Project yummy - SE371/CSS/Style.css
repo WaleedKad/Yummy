@@ -1,0 +1,363 @@
+:root {
+
+    --one: rgba(170, 126, 212, 0.755);
+    --two: rgb(236, 145, 236);
+    --three: rgba(138, 27, 138, 0.827);
+    --four: rgba(245, 12, 121, 0.827);
+}
+
+
+nav {
+    border: solid var(--four) 20px;
+    border-radius: 20px;
+    background-color: var(--three);
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height:200px;
+    padding: 20px;
+    margin: 10px;
+    transition: 1s ease;
+}
+
+nav fieldset {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border: solid var(--two) 20px;
+    border-radius: 20px;
+    background-color: var(--one);
+    height: 80%;
+    width: 97%;
+    transition: 1s ease;
+}
+
+
+nav span button {
+    width: 200px;
+    padding: 30px;
+    margin: 10px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: var(--two);
+    color: var(--three);
+    transition: transform 0.3s ease;
+    height: 75px;
+}
+
+nav span button:hover {
+    background-color: var(--three);
+    color: var(--two);
+    transform: scale(1.05);
+
+}
+
+nav span button:active {
+    background-color: var(--four);
+    color: var(--three);
+    transform: scale(1.05);
+
+}
+
+
+
+nav fieldset:hover {
+
+    border: var(--four) solid 20px;
+    background-color:var(--three) ;
+    transition: 1s ease;
+    
+}
+
+nav:hover{  border: var(--two) solid 20px;  background-color:var(--one) ;
+
+    transition: 1s ease;}
+
+
+
+
+
+
+body {
+    background-color: rgba(170, 126, 212, 0.755);
+
+
+}
+
+
+
+
+
+.Grid article {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 20px solid rgb(236, 145, 236);
+    border-radius: 40px;
+    background-color: rgba(138, 27, 138, 0.827);
+    margin: 50px;
+    padding: 20px;
+    transition: transform 1s ease, border-color 1s ease, background-color 1s ease;
+
+}
+
+
+.Grid article h1 {
+
+    margin: 10px;
+    font-family: fantasy;
+    font-size: larger;
+}
+
+.Grid article:hover {
+    border-color: rgba(245, 12, 121, 0.827);
+    background-color: rgb(236, 145, 236);
+    transform: scale(1.05);
+
+
+}
+
+.Grid article img {
+    width: 50%;
+    height: 40%;
+    margin: 50px;
+}
+
+.Grid article input[type="button"] {
+
+    width: 200px;
+    height: 100px;
+    font-size: larger;
+    border: 0;
+    background-color: rgba(170, 126, 212, 0.755);
+    ;
+    color: rgba(138, 27, 138, 0.827);
+    border-radius: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.Grid article input[type="button"]:hover {
+
+
+    background-color: rgba(138, 27, 138, 0.827);
+    color: rgb(236, 145, 236);
+    transform: scale(1.05);
+
+
+}
+
+.Grid article input[type="button"]:active {
+
+
+    background-color: rgba(245, 12, 121, 0.827);
+    color: rgba(138, 27, 138, 0.827);
+    transform: scale(1.05);
+
+}
+
+
+.Grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+/* Common styles for buttons */
+nav span button {
+    width: 200px;
+    padding: 30px;
+    margin: 10px;
+    border: 0;
+    border-radius: 20px;
+    background-color: var(--two);
+    color: var(--three);
+    transition: transform 0.3s ease;
+    height: 75px;
+}
+
+/* Improved media query for smaller screens */
+@media screen and (max-width: 605px) {
+    .Grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    nav span button {
+        width: 100px;
+        padding: 15px;
+        margin: 5px;
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width: 900px) and (min-width: 606px) {
+    .Grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    
+
+
+nav span button {
+    width: 160px;
+    padding: 15px;
+    margin: 5px;
+    height: 80px;
+
+    border: 0px;
+}
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .Grid {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    
+
+
+
+
+}
+
+
+
+
+
+
+form {
+    margin: 50px;
+    padding: 10px;
+
+
+
+}
+
+form label {
+    margin: 20px;
+}
+
+
+
+.Li {
+    width: 50px;
+    height: 50px;
+}
+
+form input[type="button"] {
+
+    margin: 30px 0px 30px 30px;
+    padding: 30px;
+    border: 0;
+    border-radius: 20px;
+
+    background-color: rgb(236, 145, 236);
+    color: rgba(138, 27, 138, 0.827);
+    transition: background-color 0.3s ease;
+
+}
+
+form input[type="button"]:hover {
+    background-color: rgba(138, 27, 138, 0.827);
+    color: rgb(236, 145, 236);
+}
+
+
+form input[type="button"]:active {
+    background-color: rgba(245, 12, 121, 0.827);
+    color: rgba(138, 27, 138, 0.827);
+
+}
+
+form fieldset {
+    border: solid rgba(245, 12, 121, 0.827) 15px;
+    background-color: rgba(138, 27, 138, 0.827);
+    border-radius: 20px;
+
+
+}
+
+
+form input[type="text"],
+form select {
+    border: 0px;
+    border-radius: 20px;
+    background-color: rgb(236, 145, 236);
+    width: 200px;
+    height: 50px;
+    color: rgba(138, 27, 138, 0.827);
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-family: fantasy;
+    font-size: large;
+}
+
+form input[type="text"]:hover,
+form select:hover {
+    background-color: rgba(245, 12, 121, 0.827);
+    color: rgb(236, 145, 236);
+}
+
+form input[type="text"]:active,
+form select:active {
+    background-color: rgba(170, 126, 212, 0.755);
+}
+
+#SearchRes::placeholder {
+    color: rgba(138, 27, 138, 0.827);
+}
+
+
+header img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: solid 30px rgba(138, 27, 138, 0.827);
+    border-radius: 30px;
+
+
+}
+
+
+
+footer section fieldset {
+    border: solid 20px rgba(245, 12, 121, 0.827);
+    border-radius: 20px;
+    background-color: rgba(138, 27, 138, 0.827);
+    margin: 40px;
+    padding: 20px;
+}
+
