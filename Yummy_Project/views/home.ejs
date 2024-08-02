@@ -1,0 +1,54 @@
+<%- include('./partials/header.ejs') %>
+
+    <main>
+
+        <form method="get" action="/search">
+            <fieldset>
+                <legend><img src="images/Screenshot 2023-10-21 at 12.02.33 AM.png" alt="Cup" class="Li"></legend>
+                <div class="xf">
+
+                    <label for="SearchRes">Enter The Restaurant Name:</label>
+                    <input id="SearchRes" type="text" name="_SearchR" placeholder="Restaurant Name">
+
+                    <label for="Filter">Pick Food Type:</label>
+                    <select name="filter" id="Filter">
+                        <option value="-1">Select Food type</option>
+                        <option value="0">Burgers</option>
+                        <option value="1">Pizza</option>
+                        <option value="2">Asin</option>
+                        <option value="3">Indain</option>
+                        <option value="4">MiddelEstren</option>
+                        <option value="5">Coffe</option>
+                        <input type="button" value="Search">
+
+
+                    </select>
+                </div>
+
+
+            </fieldset>
+        </form>
+
+        <section class="Grid">
+            <% if (restaurants && restaurants.length> 0) { %>
+                <% restaurants.forEach(restaurants=> { %>
+                    <article>
+                        <img src="<%= restaurants.img %>" alt="<%= restaurants.alt %>">
+                        <h1>
+                            <%= restaurants.name %>
+                        </h1>
+                        <% if (restaurants.name==="Dave's hot chicken" ) { %>
+                            <a href="/daves" class="menu-link">
+                                <input type="button" value="Select" id="menuButton-<%= restaurants.id %>">
+                            </a>
+                            <% } else { %>
+                                <input type="button" value="Select" id="menuButton-<%= restaurants.id %>">
+                                <% } %>
+                    </article>
+                    <% }); %>
+                        <% } else { %>
+                            <p>There is no data to be displayed...</p>
+                            <% }; %>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>

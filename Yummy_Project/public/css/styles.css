@@ -1,0 +1,70 @@
+
+hr{
+    border-color: #c410ac;
+}
+
+
+img {
+    width: 70%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+legend {
+    font-size: 25px;
+    padding: 10px;
+}
+
+body {
+    background-color: rgb(188, 129, 240);
+}
+
+.container {
+    background-color: rgba(245, 12, 121, 0.827);
+    padding: 20px;
+}
+
+form {
+    border: 20px solid rgb(248, 149, 248);
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    background-color: rgb(188, 129, 240);
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="button"] {
+    width: 100px;
+    margin: 20px;
+    background-color: #c410ac;
+    color: white;
+    align-items: center;
+    border-radius: 10px;
+}
+
+form div {
+    padding: 10px;
+}
+
+input:valid {
+border: 2px solid green; /* Green border for valid input */
+}
+
+input:invalid {
+border: 2px solid red; /* Red border for invalid input */
+}
+
+
+footer  {
+    border: solid 20px rgba(245, 12, 121, 0.827);
+    border-radius: 20px;
+    background-color: rgba(138, 27, 138, 0.827);
+    margin: 40px;
+    padding: 20px;
+}

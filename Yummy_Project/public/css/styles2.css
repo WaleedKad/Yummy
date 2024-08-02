@@ -59,3 +59,11 @@ border: 2px solid green; /* Green border for valid input */
 input:invalid {
 border: 2px solid red; /* Red border for invalid input */
 }
+
+footer section fieldset {
+    border: solid 20px rgba(245, 12, 121, 0.827);
+    border-radius: 20px;
+    background-color: rgba(138, 27, 138, 0.827);
+    margin: 40px;
+    padding: 20px;
+}

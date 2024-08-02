@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- general meta tags -->
+  <meta charset="utf-8">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- site specific tags -->
+  <title>Login Page</title>
+  <!-- style sheets -->
+  <link rel="stylesheet" href="/css/css-reset.css">
+  <link rel="stylesheet" href="/css/styles2.css">
+  <!-- javascript files -->
+  <script src=".js"></script>
+
+</head>
+
+
+
+<body>
+  <header>
+    <img src="images/yummy.jpg" alt="yummy">
+  </header>
+
+  <main>
+    <section>
+      <article>
+        <form method="Login" action="Login">
+          <fieldset>
+            <legend>Login</legend>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required title="An email" />
+            </div>
+            <div>
+              <label for="password">Password:</label>
+              <input type="password" id="Password" name="Password" required pattern="[a-zA-Z]{2,20}"
+                title="2 to 20 letters" />
+            </div>
+            <input type="submit" value="Login" onclick="window.location.href = '/home'">
+            <input type="button" value="SignUp" onclick="window.location.href = '/register'">
+          </fieldset>
+        </form>
+      </article>
+
+
+    </section>
+  </main>
+  <%- include('./partials/footer.ejs') %>

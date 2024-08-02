@@ -7,23 +7,23 @@
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- site specific tags -->
-  <title>Yummy</title>
+  <title>Register</title>
   <!-- style sheets -->
-  <link rel="stylesheet" href="CSSLS\css-reset.css">
-  <link rel="stylesheet" href="CSSLS\styles.css">
-  
+  <link rel="stylesheet" href="/css/css-reset.css">
+  <link rel="stylesheet" href="/css/styles2.css">
+
 </head>
 
 
 
 <body>
   <header>
-    <img src="imagesLS\yummy.jpg" alt="yummy">
+    <img src="images/yummy.jpg" alt="yummy">
   </header>
   <main>
     <section>
       <article>
-        <form method="Sign Up" action="/someAction">
+        <form action="/register" method="post">
           <fieldset>
             <legend>Sign Up</legend>
 
@@ -42,6 +42,11 @@
               <input type="email" id="email" name="email" required title="An email" />
             </div>
             <div>
+              <label for="password">password:</label>
+              <input type="password" id="password" name="password" required pattern="[a-zA-Z]{10, 20}"
+                title="password of no more than 20 characters" />
+            </div>
+            <div>
               <label for="phoneNumber">Phone #:</label>
               <input type="text" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{10,14}"
                 title="a phone number of 10 to 14 digits" />
@@ -52,14 +57,16 @@
               <input type="text" id="address" name="address" required size="22" pattern="[a-z]{10, 30}"
                 title="Address of no more than 30 characters" />
             </div>
+
+
             <div>
               <label for="zipCode">Zip Code:</label>
               <input type="text" id="zipCode" name="zipCode" required pattern="[0-9]{4,6}"
                 title="a zip code of 4 to 6 digits" />
             </div>
-            <input type="submit" value="Sign Up" onclick="window.location.href = 'HomePage.html'">
-            <input type="button" value="Login" onclick="window.location.href = 'login.html'">
-            
+            <input type="submit" value="SignUp">
+            <input type="button" value="Login">
+
             <div>
           </fieldset>
 
@@ -67,6 +74,4 @@
       </article>
     </section>
   </main>
-</body>
-
-</html>
+  <%- include('./partials/footer.ejs') %>

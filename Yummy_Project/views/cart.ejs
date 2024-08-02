@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cart</title>
+
+  <link rel="stylesheet" href="/css/css-reset.css">
+  <link rel="stylesheet" href="/css/cart.css">
+
+  <script src="your-script.js"></script>
+</head>
+
+<body>
+  <header>
+    <img class="img" src="images/WhatsApp Image 2023-10-20 at 11.51.10 PM.jpeg" alt="logo">
+    <nav>
+      <fieldset>
+        <span>
+          <a href="/cart"><button>Cart</button></a>
+          <a href="/home"><button>HomePage</button></a>
+          <a href="/contactus"><button>Contact Us</button></a>
+        </span>
+      </fieldset>
+    </nav>
+  </header>
+  <main>
+    <table class="table_border">
+      <thead class="table_head">
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%if(items && items.length> 0){%>
+          <% items.forEach(item=> { %>
+            <tr>
+              <td>
+                <%= item.product %>
+              </td>
+              <td>
+                <%= item.price %>
+              </td>
+              <td>
+                <%= item.quantity %>
+              </td>
+              <td rowspan="4" class="order_total">
+                <%= item.total %>
+              </td>
+            </tr>
+            <% }); %>
+
+              <%}else{%>
+                <tr>
+                  <td colspan="4">There is no items to be displayed...</td>
+                </tr>
+                <%}%>
+
+      <tfoot>
+      </tfoot>
+    </table>
+    <div>
+      <button class="btn">Confirm</button>
+      <button class="btn">Cancel</button>
+    </div>
+  </main>
+  <%- include('./partials/footer.ejs') %>
